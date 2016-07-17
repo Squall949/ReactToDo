@@ -6,7 +6,7 @@ export class TodoList extends Component {
     }
 
     render() {
-        var createItem = function(item) {
+        let createItem = function(item) {
             return <li key={item.id}>{item.text}</li>;
         };
         return <ul>{this.props.items.map(createItem)}</ul>;
